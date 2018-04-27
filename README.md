@@ -10,8 +10,8 @@ Due the purpose of just applying the most basic concepts, no UI was implemented.
 
 ### Backend
 Build an endpoint to your database and add it to both files:
-* [server.js(https://github.com/soutot/react-native-simple-fullstack/blob/master/app-koa-server/server.js#L11)
-* [session.seeder.js)[https://github.com/soutot/react-native-simple-fullstack/blob/master/app-koa-server/src/data/seeders/session.seeder.js#L235]
+* [server.js](https://github.com/soutot/react-native-simple-fullstack/blob/master/app-koa-server/server.js#L11)
+* [session.seeder.js](https://github.com/soutot/react-native-simple-fullstack/blob/master/app-koa-server/src/data/seeders/session.seeder.js#L235)
 
 For this example I used [Mlab](https://mlab.com/login/) but you can use a local DB
 
