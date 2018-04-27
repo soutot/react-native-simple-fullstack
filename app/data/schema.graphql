@@ -1,0 +1,45 @@
+type Mutation {
+  SessionAdd(input: SessionAddInput!): SessionAddPayload
+  SessionEdit(input: SessionEditInput!): SessionEditPayload
+}
+
+type Query {
+  session(_id: String!): Session
+  sessions: [Session]
+}
+
+type Session {
+  _id: ID!
+  day: Int!
+  title: String!
+  slot: String!
+  speakers: [String]
+}
+
+input SessionAddInput {
+  day: Int!
+  title: String!
+  slot: String!
+  speakers: String!
+  clientMutationId: String
+}
+
+type SessionAddPayload {
+  session: Session
+  error: String
+  clientMutationId: String
+}
+
+input SessionEditInput {
+  day: Int!
+  title: String!
+  slot: String!
+  speakers: [String]!
+  clientMutationId: String
+}
+
+type SessionEditPayload {
+  session: Session
+  error: String
+  clientMutationId: String
+}
